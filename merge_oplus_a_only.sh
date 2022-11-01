@@ -23,4 +23,5 @@ output_zip=# Input here what should be the name of the generated zip
 # Removes the 8 digits of Oplus NV ID
 rename 's/(\w+)\.(\d+)\.(\w+)/$1.$3/' *
 
-7z a -tzip  $output_zip $output_folder
+cd $output_folder
+7z a -tzip $output_zip *
